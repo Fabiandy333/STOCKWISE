@@ -1,0 +1,86 @@
+.header {
+  height: 64px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1.5rem;
+}
+
+/* =========================
+   IZQUIERDA
+========================= */
+
+.page-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* =========================
+   DERECHA
+========================= */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Buscador */
+.search-box input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  width: 220px;
+}
+
+/* Notificaciones */
+.notification-btn {
+  position: relative;
+  font-size: 1.25rem;
+  background: transparent;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+/* Usuario */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-info img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.user-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
