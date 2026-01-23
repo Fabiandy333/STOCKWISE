@@ -1,0 +1,108 @@
+.inventory-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inventory-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Wrapper para scroll horizontal */
+.table-wrapper {
+   width: 100%;
+  overflow-x: auto;          
+  overflow-y: hidden;
+  border-radius: 12px;
+}
+
+/* Tabla */
+.inventory-table {
+  width: 100%;
+  min-width: 1600px;         
+  border-collapse: collapse;
+  background-color: var(--card-bg);
+}
+
+/* Encabezados */
+.inventory-table thead {
+  background-color: var(--bg-sidebar);
+}
+
+.inventory-table th {
+  padding: 0.75rem;
+  text-align: left;
+  color: white;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Filas */
+.inventory-table td {
+  padding: 0.6rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+/* Hover */
+.inventory-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Estados */
+.status-active {
+  color: var(--secondary);
+  font-weight: 600;
+}
+/* Fila de filtros */
+.filters-row th {
+  background: #0f172a;
+  padding: 0.4rem;
+}
+
+.filters-row input {
+  width: 100%;
+  padding: 0.35rem 0.4rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+}
+
+.filters-row input::placeholder {
+  color: #94a3b8;
+}
+
+/* Hover en headers */
+.inventory-table th {
+  cursor: pointer;
+  position: relative;
+}
+
+.inventory-table th:hover {
+  background-color: #020617;
+}
+.inventory-table th .sort-indicator {
+  position: absolute;
+  right: 8px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+th {
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background-color: rgba(163, 230, 53, 0.15); /* verde lima suave */
+}
+th .sort-indicator {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}

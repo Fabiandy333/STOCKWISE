@@ -1,0 +1,39 @@
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  background-color: var(--bg-sidebar);
+  flex-shrink: 0;
+  transition: width 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}
+
+/* Sidebar oculto */
+.layout.collapsed .sidebar {
+  width: 0;
+  min-width: 0;
+  transform: translateX(-100%);
+}
+
+/* ---------- MAIN ---------- */
+.layout-main {
+  flex: 1;
+  min-width: 0; /* 🔥 CLAVE ABSOLUTA */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+  background-color: var(--bg-main);
+}
