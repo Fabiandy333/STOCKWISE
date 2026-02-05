@@ -7,6 +7,7 @@ import OrderDetail from "../pages/orders/OrderDetail";
 import Printers from "../pages/printers/Printers";
 import SdsUpload from "../pages/sds/SdsUpload";
 // import Users from "../pages/users/Users";
+import MyKeys from "../pages/my-keys/MyKeys";
 
 
 export default function AppRouter() {
@@ -21,6 +22,7 @@ export default function AppRouter() {
         <Route path="/order-detail" element={<OrderDetail />} />
         <Route path="/printers" element={<Printers />} />
         <Route path="/sds-upload" element={<SdsUpload />} />
+        <Route path="/my-keys" element={<MyKeys />} />
         {/* <Route path="/users" element={<Users />} /> */}
         {/* Opcional: captura rutas no existentes */}
         <Route path="*" element={<Navigate to="/dashboard" replace />} />

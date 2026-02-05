@@ -1,0 +1,39 @@
+.mykeys-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mykeys-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Tabla más pequeña que inventario */
+.mykeys-table {
+  min-width: 1200px;
+}
+
+/* Botón copiar */
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.copy-btn:hover {
+  opacity: 0.75;
+}
+
+/* Acciones */
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 0.9rem;
+}

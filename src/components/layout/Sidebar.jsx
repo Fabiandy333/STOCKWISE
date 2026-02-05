@@ -11,6 +11,7 @@ export default function Sidebar({ collapsed }) {
         <NavLink to="/orders">Pedidos</NavLink>
         <NavLink to="/printers">Impresoras</NavLink>
         <NavLink to="/sds-upload">SDS</NavLink>
+        <NavLink to="/my-keys">Mis Claves</NavLink>
         <NavLink to="/admin/users">Usuarios</NavLink>
       </nav>
     </aside>

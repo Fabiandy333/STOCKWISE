@@ -3,13 +3,15 @@ import { useLocation } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import Header from './Header'
 import './MainLayout.css'
+import Footer from './Footer'
 
 const titles = {
   '/dashboard': 'Dashboard',
   '/inventory': 'Inventario',
   '/orders': 'Pedidos',
   '/printers': 'Impresoras',
-  '/sds': 'SDS'
+  '/sds': 'SDS',
+  '/my-keys': 'Mis Claves'
 }
 
 export default function MainLayout({ children }) {
@@ -35,6 +37,7 @@ export default function MainLayout({ children }) {
         <main className="content">
           {children}
         </main>
+         <Footer />
       </div>
     </div>
   )
