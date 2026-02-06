@@ -1,17 +1,19 @@
 import { useState } from 'react'
+import MainLayout from '../../components/layout/MainLayout'
 import './MyKeys.css'
 
 const mockData = [
-  {
-    id: '1',
+ {
+    id: '4',
     account: 'HP Smart Device Services',
-    url: 'https://sds.hp.com',
-    username: 'admin_hp',
+    url: 'https://hp-sds-latam.insightportal.net/PortalWeb/login',
+    username: 'fabcampe',
     password: '********',
-    securityAnswer: 'Primer carro',
-    notes: 'Cuenta principal',
-    updatedAt: '2025-01-12'
+    securityAnswer: 'N/A',
+    notes: 'Cuenta usuario',
+    updatedAt: '2026-02-06'
   }
+
 ]
 
 const MyKeys = () => {
@@ -22,14 +24,15 @@ const MyKeys = () => {
   }
 
   return (
-    <div className="mykeys-page">
+    <MainLayout>
+        <div className="mykeys-page">
       <div className="mykeys-header">
         <h2>Mis Claves</h2>
         <button className="add-btn">+ Nueva Clave</button>
       </div>
 
       <div className="table-wrapper">
-        <table className="inventory-table mykeys-table">
+        <table className="table">
           <thead>
             <tr>
               <th>Cuenta</th>
@@ -68,7 +71,7 @@ const MyKeys = () => {
                   ********
                   <button
                     className="copy-btn"
-                    onClick={() => copyToClipboard('PASSWORD_REAL')}
+                    onClick={() => copyToClipboard(item.password)}
                   >
                     📋
                   </button>
@@ -97,6 +100,7 @@ const MyKeys = () => {
         </table>
       </div>
     </div>
+    </MainLayout>
   )
 }
 

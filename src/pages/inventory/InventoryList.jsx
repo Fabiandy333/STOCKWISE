@@ -25,7 +25,7 @@ const handleSort = (key) => {
         <h2 className="inventory-title">Inventario de Impresoras</h2>
 
         <div className="table-wrapper">
-          <table className="inventory-table">
+          <table className="table">
             <thead>
               {/* FILA DE TÍTULOS */}
               <tr>

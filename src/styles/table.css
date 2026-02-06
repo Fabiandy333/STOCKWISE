@@ -9,18 +9,18 @@
 }
 
 /* Tabla base */
-.inventory-table {
+.table {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--card-bg);
 }
 
 /* Encabezados */
-.inventory-table thead {
+.table thead {
   background-color: var(--bg-sidebar);
 }
 
-.inventory-table th {
+.table th {
   padding: 0.75rem;
   text-align: left;
   color: white;
@@ -32,12 +32,12 @@
 }
 
 /* Hover en headers */
-.inventory-table th:hover {
+.table th:hover {
   background-color: #020617;
 }
 
 /* Filas */
-.inventory-table td {
+.table td {
   padding: 0.6rem;
   color: var(--text-primary);
   border-bottom: 1px solid #e5e7eb;
@@ -45,12 +45,12 @@
 }
 
 /* Hover filas */
-.inventory-table tbody tr:hover {
+.table tbody tr:hover {
   background-color: #f9fafb;
 }
 
 /* Indicador sort */
-.inventory-table th .sort-indicator {
+.table th .sort-indicator {
   position: absolute;
   right: 8px;
   font-size: 0.75rem;

@@ -16,7 +16,7 @@ const titles = {
 
 export default function MainLayout({ children }) {
   const location = useLocation()
-  const title = titles[location.pathname] || 'TonerWare'
+  const title = titles[location.pathname] || 'StockWise'
   const [collapsed, setCollapsed] = useState(false)
 
   const toggleSidebar = () => {

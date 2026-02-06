@@ -10,10 +10,6 @@
   color: var(--text-primary);
 }
 
-/* Tabla más pequeña que inventario */
-.mykeys-table {
-  min-width: 1200px;
-}
 
 /* Botón copiar */
 .copy-btn {
