@@ -10,7 +10,8 @@ const STATUSES = [
   'Pedido a bodega',
   'Entregado al usuario',
   'En proceso de facturación',
-  'Finalizado'
+  'Finalizado',
+  'Cancelado'
 ]
 
 const ShoppingTimeline = ({ currentStatus }) => {
