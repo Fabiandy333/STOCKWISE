@@ -11,7 +11,8 @@ const titles = {
   '/orders': 'Pedidos',
   '/printers': 'Impresoras',
   '/sds': 'SDS',
-  '/my-keys': 'Mis Claves'
+  '/my-keys': 'Mis Claves',
+  '/shopping': 'Compras'
 }
 
 export default function MainLayout({ children }) {

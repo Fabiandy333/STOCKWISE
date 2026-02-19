@@ -13,6 +13,7 @@ export default function Sidebar({ collapsed }) {
         <NavLink to="/sds-upload">SDS</NavLink>
         <NavLink to="/my-keys">Mis Claves</NavLink>
         <NavLink to="/admin/users">Usuarios</NavLink>
+        <NavLink to="/shopping">Compras</NavLink>
       </nav>
     </aside>
   );

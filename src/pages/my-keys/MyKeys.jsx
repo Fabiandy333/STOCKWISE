@@ -1,23 +1,13 @@
 import { useState } from 'react'
 import MainLayout from '../../components/layout/MainLayout'
 import './MyKeys.css'
+import { myKeysMock } from './myKeys.mock'
 
-const mockData = [
- {
-    id: '4',
-    account: 'HP Smart Device Services',
-    url: 'https://hp-sds-latam.insightportal.net/PortalWeb/login',
-    username: 'fabcampe',
-    password: '********',
-    securityAnswer: 'N/A',
-    notes: 'Cuenta usuario',
-    updatedAt: '2026-02-06'
-  }
 
-]
 
 const MyKeys = () => {
-  const [keys, setKeys] = useState(mockData)
+  
+  const [keys, setKeys] = useState(myKeysMock)
 
   const copyToClipboard = (value) => {
     navigator.clipboard.writeText(value)
@@ -27,8 +17,7 @@ const MyKeys = () => {
     <MainLayout>
         <div className="mykeys-page">
       <div className="mykeys-header">
-        <h2>Mis Claves</h2>
-        <button className="add-btn">+ Nueva Clave</button>
+        <button className="btn-primary">+ Nueva Clave</button>
       </div>
 
       <div className="table-wrapper">

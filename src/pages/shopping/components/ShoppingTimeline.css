@@ -1,0 +1,29 @@
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.4;
+}
+
+.timeline-step.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.timeline-step .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.timeline-step.active .dot {
+  background: var(--secondary);
+}

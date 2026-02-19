@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 🔐 Datos sensibles
+**/*.mock.js
+**/myKeys.mock.js
